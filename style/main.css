@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #4056a1;
+  --secondary-color: #efe2ba;
+  --third-color: #f13c20;
+  --text-color: #d79922;
+  --fourth-color: #c5cbe3;
+  --white-text-color: #fff;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary-color);
+}
+
+button {
+  color: var(--white-text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0px;
+  width: 230px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  border-color: var(--primary-color);
+}
+
+button:hover {
+  border-color: var(--text-color);
+}
+
+input {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+header {
+  text-align: center;
+  padding-top: 50px;
+  height: 100px;
+  font-size: 2.5rem;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  margin: 6% 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 10%;
+}
+
+.color-select {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.color-select input {
+  margin-right: 20px;
+}
+
+.color-select label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.color-fill {
+  margin: 30px 0px;
+}
+
+.toggle {
+  margin: 30px 0px;
+}
+
+.slider {
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.slider input {
+  margin-bottom: 2px;
+  background-color: orange;
+  width: 100%;
+}
+
+.slider button {
+  margin-top: 20px;
+}
+
+.slider p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.tools {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background-color: grey;
+  border: 10px ridge var(--text-color);
+}
+
+.board-container {
+  width: 700px;
+  height: 700px;
+  border: 20px solid rgb(218, 198, 24);
+  border-radius: 20px;
+}
+
+.board {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border: 1px solid grey;
+  cursor: crosshair;
+  display: grid;
+  
+}
+
+.block-style {
+
+  border: 1px solid lightgray;
+
+}
+
+button.active {
+
+  background-color: var(--primary-color);
+
+}

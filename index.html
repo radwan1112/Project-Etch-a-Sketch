@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch A Sketch</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
 
+  <body>
+    <header>
+      <h1>Etch A Sketch</h1>
+    </header>
 
+    <section>
+      <div class="container">
+        <div class="tools">
+          <div class="color-select">
+            <input type="color" id="colorPicker" value="" /><label for="colorPicker">Color</label><br /><br />
+            <input type="color" id="groundColor" value="" /><label for="groundColor">Background Color</label>
+          </div>
 
+          <div class="color-fill">
+            <button class="" id="colorBtn">Color</button>
+            <button class="" id="colorGrabber">Color Grabber</button>
+          </div>
 
+          <div class="toggle">
+            <button class="" id="eraser">Toggle Eraser</button>
+            <button class="" id="rainbow">Rainbow Color</button>
+            <button class="" id="shading">Toggle Shading</button>
+            <button class="" id="lighting">Toggle Lighting</button>
+          </div>
 
-    
-    
-</body>
+          <div class="slider">
+            <input
+              type="range"
+              id="gridRange"
+              name="grid_box"
+              value="16"
+              min="1"
+              max="64"
+              step="1"
+            />
+            <p class="grid-size">
+              Grid size: <span id="grid_size">16 x 16</span>
+            </p>
+            <button class="" id="toggle_grid">Toggle Grid</button>
+          </div>
+
+          <div class="clear">
+            <button class="" id="clear">Clear</button>
+          </div>
+        </div>
+
+        <div class="board-container">
+          <div id="board" class="board"></diJavaScript: The Definitive Guidev>
+        </div>
+      </div>
+    </section>
+
+    <script src="/script/script.js"></script>
+  </body>
 </html>
